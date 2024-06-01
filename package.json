@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JayeshKarandeDev/RateLimitor/issues"
   },
-  "homepage": "https://github.com/JayeshKarandeDev/RateLimitor#readme"
+  "homepage": "https://github.com/JayeshKarandeDev/RateLimitor#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
