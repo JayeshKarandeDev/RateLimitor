@@ -1,22 +1,19 @@
 class Queue{
-    maxQueue=5
     constructor ()
     {
         this.elements=[]
     }
     enqueue(data){
-        if (this.elements.length==this.maxQueue) {
-            return "Queue already full"
-        }
         this.elements.push(data)
+        console.log("adding item in queue")
         return "current queue length "+this.elements.length
     }
     dequeue(){
         if (this.elements.length==0) {
             return null
         }
+        console.log("removing item from queue")
         return this.elements.shift()
-        return "current queue length "+this.elements.length
     }
     size()
     {
@@ -27,6 +24,12 @@ class Queue{
             return null
         }
         return this.elements[0]
+    }
+    isEmpty(){
+        if (this.elements.length==0) {
+            return true
+        }
+        else return false
     }
 
 }
